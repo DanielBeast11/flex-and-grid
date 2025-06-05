@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --lightest-gray: #F3F3F5;
+    --light-gray: #F5F7FA;
+    --medium-gray: #EDF0F7;
+    --violet: #4C49ED;
+    --white: #FFFFFF;
+    --green: #16DBCC;
+    --grass-green: #41D4A8;
+    --pink: #FF82AC;
+    --red: #FF4B4A;
+    --dark-blue: #343C6A;
+    --light-blue: #718EBF;
+    --light-green: #DCFAF8;
+    --light-golden: #FFF5D9;
+    --kind-of-black: #232323;
+    --h1: 22px;
+    --h2: 17px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-gray);
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--h1);
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+h2 {
+    font-size: var(--h2);
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+#main {
+    margin: 32px auto;
+    max-width: 1110px;
+    display: grid;
+    grid-template: 292px 382px / 730px 350px;
+    gap: 60px 30px;
+}
+
+#cards {
+    display: grid;
+    grid-template-areas:
+    "a a"
+    "c b";
+    gap: 20px 30px;
+}
+
+#cards .headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: a;
+    height: 27px;
+}
+
+.card {
+    width: 350px;
+    height: 245px;
+    border-radius: 25px;
+    grid-area: b;
+    background-color: var(--white);
+    padding: 24px 26px;
+    display: grid;
+    grid-template-rows: 44px 39px 26px;
+    row-gap: 44px;
+    color: var(--dark-blue)
+}
+
+.card:nth-child(2) {
+    background-color: var(--violet);
+    grid-area: c;
+    color: var(--white);
+}
+
+.card-number > span {
+    display: block;
+    font-weight: 600;
+    font-size: var(--h1);
+    width: 220px;
+}
+
+.card .first-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 297px;
+}
+
+.first-row .chip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.balance > span {
+    display: block;
+    font-size: 12px;
+}
+
+.balance > span:nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-text {
+    display: flex;
+    width: 212px;
+    align-items: center;
+}
+
+.card-text .first-column {
+    margin-right: 30px;
+}
+
+.card-text .first-column > span {
+    display: block;
+    font-size: 12px;
+    opacity: 70%;
+}
+
+.card-text .first-column > span:nth-child(2) {
+    font-weight: 600;
+    font-size: 15px;
+    opacity: 100%;
+}
+
+.card-text .second-column > span {
+    display: block;
+    font-size: 12px;
+    opacity: 70%;
+}
+
+.card-text .second-column > span:nth-child(2) {
+    font-weight: 600;
+    font-size: 15px;
+    opacity: 100%;
+}
+
+.card:nth-child(3) .card-text .first-column > span:nth-child(1) {
+    opacity: 100%;
+    color: var(--light-blue);
+}
+
+.card:nth-child(3) .card-text .second-column > span:nth-child(1) {
+    opacity: 100%;
+    color: var(--light-blue);
+}
+
+#operations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#recent-operations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 24px;
+    background-color: var(--white);
+    border-radius: 25px;
+}
+
+.operation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+}
+
+.operation-info {
+    display: flex;
+    align-items: center;
+}
+
+.operation-text > span {
+    display: block;
+    color: var(--light-blue);
+    font-size: 15px;
+}
+
+.operation-text > span:first-child {
+    color: var(--kind-of-black);
+    margin-bottom: 7px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.operation-info .icon {
+    width: 55px;
+    height: 55px;
+    background-color: var(--light-green);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+}
+
+.operation:last-child .operation-info .icon {
+    background-color: var(--light-golden);
+}
+
+.operation .amount > span {
+    color: var(--grass-green);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.operation:last-child .amount > span {
+    color: var(--red);
+}
+
+#last-activity {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#weekly-activity {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    font-size: 13px;
+    color: var(--light-blue);
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 28px;
+}
+
+.legend {
+    display: flex;
+    align-self: flex-end;
+    gap: 16px;
+    font-size: 15px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.deposit-circle {
+    background-color: var(--green);
+}
+
+.withdraw-circle {
+    background-color: var(--pink);
+}
+
+#weekly-activity-diagram {
+    display: grid;
+    grid-template-columns: min-content repeat(7, auto);
+    grid-template-areas:
+    "y-axis-1 . . . . . . ."
+    "y-axis-2 . . . . . . ."
+    "y-axis-3 . . . . . . ."
+    "y-axis-4 . . . . . . ."
+    "y-axis-5 . . . . . . ."
+    "y-axis-6 bar-1 bar-2 bar-3 bar-4 bar-5 bar-6 bar-7"
+    ". day-1 day-2 day-3 day-4 day-5 day-6 day-7";
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#weekly-activity-diagram .y-axis {
+    width: 100%;
+    text-align: right;
+}
+
+#weekly-activity-diagram .line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--lightest-gray);
+}
+
+#weekly-activity-diagram .bar-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#weekly-activity-diagram .bar {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    gap: 12px;
+}
+
+#weekly-activity-diagram .bar > div {
+    width: 15px;
+    border-radius: 30px;
+}
+
+#weekly-activity-diagram .bar-red {
+    height: 178px;
+    background-color: var(--pink);
+}
+
+#weekly-activity-diagram .bar-green {
+    height: 91px;
+    background-color: var(--green);
+}
+
+#costs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#cost-diagram {
+    display: flex;
+    background-color: var(--white);
+    padding: 28px;
+    justify-content: space-between;
+    align-items: end;
+    height: 335px;
+    border-radius: 25px;
+}
+
+#cost-diagram > .bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    color: var(--light-blue);
+    font-size: 12px;
+}
+
+.bar .column {
+    width: 37px;
+    height: 71px;
+    background-color: var(--medium-gray);
+    border-radius: 10px;
+}
+
+.bar:nth-child(5) .column {
+    height: 190px;
+    background-color: var(--green);
+    box-shadow: 0 0 35px 0 rgba(18, 136, 126, 0.2);
+}

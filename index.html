@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="cards">
+            <div class="headings">
+                <h1>Мои карты</h1>
+                <h2>Посмотреть все</h2>
+            </div>
+            <div class="card">
+                <div class="first-row">
+                    <div class="balance">
+                        <span>Баланс</span>
+                        <span>5756₽</span>
+                    </div>
+                    <div class="chip">
+                        <img src="Chip_Card_white.svg" alt="Чип карты" />
+                    </div>
+                </div>
+                <div class="card-text">
+                    <div class="first-column">
+                        <span>CARD HOLDER</span>
+                        <span>Eddy Cusuma</span>
+                    </div>
+                    <div class="second-column">
+                        <span>VALID THRU</span>
+                        <span>12/22</span>
+                    </div>
+                </div>
+                <div class="card-number">
+                    <span>3778 **** **** 1234</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="first-row">
+                    <div class="balance">
+                        <span>Баланс</span>
+                        <span>5756₽</span>
+                    </div>
+                    <div class="chip">
+                        <img src="Chip_Card_black.svg" alt="Чип карты" />
+                    </div>
+                </div>
+                <div class="card-text">
+                    <div class="first-column">
+                        <span>CARD HOLDER</span>
+                        <span>Eddy Cusuma</span>
+                    </div>
+                    <div class="second-column">
+                        <span>VALID THRU</span>
+                        <span>12/22</span>
+                    </div>
+                </div>
+                <div class="card-number">
+                    <span>3778 **** **** 1234</span>
+                </div>
+            </div>
+        </div>
+        <div id="operations">
+            <h1>Недавние операции</h1>
+            <div id="recent-operations">
+                <div class="operation">
+                    <div class="operation-info">
+                        <div class="icon">
+                            <img src="replenishment.svg" alt="Пополнение" />
+                        </div>
+                        <div class="operation-text">
+                            <span>Пополнение</span>
+                            <span>25 января 2021</span>
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <span>+2500₽</span>
+                    </div>
+                </div>
+                <div class="operation">
+                    <div class="operation-info">
+                        <div class="icon">
+                            <img src="replenishment.svg" alt="Пополнение" />
+                        </div>
+                        <div class="operation-text">
+                            <span>Пополнение</span>
+                            <span>21 января 2021</span>
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <span>+5400₽</span>
+                    </div>
+                </div>
+                <div class="operation">
+                    <div class="operation-info">
+                        <div class="icon">
+                            <img src="transfer.svg" alt="Перевод" />
+                        </div>
+                        <div class="operation-text">
+                            <span>Перевод</span>
+                            <span>28 января 2021</span>
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <span>-850₽</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="last-activity">
+            <h1>Недавняя активность</h1>
+            <div id="weekly-activity">
+                <div class="legend">
+                    <div class="legend-item">
+                        <div class="circle deposit-circle"></div>
+                        <p>Пополнения</p>
+                    </div>
+                    <div class="legend-item">
+                        <div class="circle withdraw-circle"></div>
+                        <p>Траты</p>
+                    </div>
+                </div>
+                <div id="weekly-activity-diagram">
+                    <div class="line"
+                         style="grid-area: y-axis-1 / bar-1 / y-axis-1 / bar-7"></div>
+                    <div class="line"
+                         style="grid-area: y-axis-2 / bar-1 / y-axis-2 / bar-7"></div>
+                    <div class="line"
+                         style="grid-area: y-axis-3 / bar-1 / y-axis-3 / bar-7"></div>
+                    <div class="line"
+                         style="grid-area: y-axis-4 / bar-1 / y-axis-4 / bar-7"></div>
+                    <div class="line"
+                         style="grid-area: y-axis-5 / bar-1 / y-axis-5 / bar-7"></div>
+                    <div class="line"
+                         style="grid-area: y-axis-6 / bar-1 / y-axis-6 / bar-7"></div>
+                    
+                    <span class="y-axis"
+                          style="grid-area: y-axis-1">
+                          500
+                    </span>
+                    <span class="y-axis"
+                          style="grid-area: y-axis-2">
+                          400
+                    </span>
+                    <span class="y-axis"
+                          style="grid-area: y-axis-3">
+                          300
+                    </span>
+                    <span class="y-axis"
+                          style="grid-area: y-axis-4">
+                          200
+                    </span>
+                    <span class="y-axis"
+                          style="grid-area: y-axis-5">
+                          100
+                    </span>
+                    <span class="y-axis"
+                          style="grid-area: y-axis-6">
+                          0
+                    </span>
+
+                    <span class="day"
+                          style="grid-area: day-1">
+                          Пн
+                    </span>
+                    <span class="day"
+                          style="grid-area: day-2">
+                          Вт
+                    </span>
+                    <span class="day"
+                          style="grid-area: day-3">
+                          Ср
+                    </span>
+                    <span class="day"
+                          style="grid-area: day-4">
+                          Чт
+                    </span>
+                    <span class="day"
+                          style="grid-area: day-5">
+                          Пт
+                    </span>
+                    <span class="day"
+                          style="grid-area: day-6">
+                          Сб
+                    </span>
+                    <span class="day"
+                          style="grid-area: day-7">
+                          Вс
+                    </span>
+
+                    <div class="bar-wrapper"
+                         style="grid-area: bar-1">
+                        <div class="bar">
+                            <div class="bar-red"></div>
+                            <div class="bar-green"></div>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper"
+                         style="grid-area: bar-2">
+                        <div class="bar">
+                            <div class="bar-red"></div>
+                            <div class="bar-green"></div>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper"
+                         style="grid-area: bar-3">
+                        <div class="bar">
+                            <div class="bar-red"></div>
+                            <div class="bar-green"></div>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper"
+                         style="grid-area: bar-4">
+                        <div class="bar">
+                            <div class="bar-red"></div>
+                            <div class="bar-green"></div>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper"
+                         style="grid-area: bar-5">
+                        <div class="bar">
+                            <div class="bar-red"></div>
+                            <div class="bar-green"></div>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper"
+                         style="grid-area: bar-6">
+                        <div class="bar">
+                            <div class="bar-red"></div>
+                            <div class="bar-green"></div>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper"
+                         style="grid-area: bar-7">
+                        <div class="bar">
+                            <div class="bar-red"></div>
+                            <div class="bar-green"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="costs">
+            <h1>Статистика расходов</h1>
+            <div id="cost-diagram">
+                <div class="bar">
+                    <div class="column"></div>
+                    <p>Авг</p>
+                </div>
+                <div class="bar">
+                    <div class="column"></div>
+                    <p>Сен</p>
+                </div>
+                <div class="bar">
+                    <div class="column"></div>
+                    <p>Окт</p>
+                </div>
+                <div class="bar">
+                    <div class="column"></div>
+                    <p>Ноя</p>
+                </div>
+                <div class="bar">
+                    <div class="column"></div>
+                    <p>Дек</p>
+                </div>
+                <div class="bar">
+                    <div class="column"></div>
+                    <p>Янв</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
